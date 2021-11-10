@@ -6,11 +6,15 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Login from './Pages/Login/Login/Login';
+import Footer from './Pages/Shared/Footer/Footer';
+import Navigation from './Pages/Shared/Navigation/Navigation';
 
 function App() {
   return (
     <div className="App">
      <Router>
+       <Navigation></Navigation>
        <Switch>
          <Route exact path="/">
             <Home></Home>
@@ -21,7 +25,13 @@ function App() {
          <Route path="/aboutUs">
             <AboutUs></AboutUs>
          </Route>
+         <Route path="/login">
+            <Login></Login>
+         </Route>
        </Switch>
+       <Router path="/footer">
+         <Footer></Footer>
+       </Router>
      </Router>
     </div>
   );

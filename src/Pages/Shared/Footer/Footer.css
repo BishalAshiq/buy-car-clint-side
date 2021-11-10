@@ -1,0 +1,12 @@
+.footer{
+ background-color: black;
+}
+.BA{
+    color: blanchedalmond;
+    display: flex;
+}
+.list{
+    display: flex;
+    margin-right: 80px;
+    color: blanchedalmond;
+}
