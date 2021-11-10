@@ -1,0 +1,19 @@
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.about p{
+    text-align: right;
+    margin: 30px;
+    font-size: 15px;
+}
+.about img{
+    margin: 30px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 20px 15px 20px 10px;
+}
+.about h2{
+    font-size: 35px;
+}

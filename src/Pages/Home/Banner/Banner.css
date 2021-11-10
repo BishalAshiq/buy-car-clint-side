@@ -10,3 +10,7 @@
     width: 500px;
     border-radius: 20px;
 }
+
+.about-button a{
+    background-color: rgb(226, 130, 4);
+}
