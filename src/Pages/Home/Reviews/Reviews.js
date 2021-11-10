@@ -18,7 +18,10 @@ import image6 from '../../../images/reviews/reviewer-6.jpg'
 export default function MediaCard() {
      const [value, setValue] = React.useState(2);
   return (
-    <div className='reviews'>
+    
+   <div>
+     <h1>CUSTOMERS REVIEW</h1>
+      <div className='reviews'>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -175,6 +178,7 @@ export default function MediaCard() {
       </CardActions>
     </Card>
     </div>
+   </div>
    
     
   );
