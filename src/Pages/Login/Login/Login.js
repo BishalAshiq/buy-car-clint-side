@@ -1,12 +1,17 @@
-import { Button, Container, Grid, TextField, Typography } from '@mui/material';
+import { Alert, AlertTitle, Button, CircularProgress, Container, Grid, TextField, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory, useLocation } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import login from '../../../images/login/login.jpg'
 
 
 const Login = () => {
     const [loginData, setLoginData]= useState({});
-    // const [password, setPassword]= useState({});
+   const {user, loginUser, isLoading, authError} =useAuth();
+
+   const location = useLocation();
+   const history = useHistory();
+
     const handleOnChange = e =>{
         const field = e.target.name;
         const value = e.target.value;
@@ -15,7 +20,7 @@ const Login = () => {
         setLoginData(newLoginData)
     }
     const handleLoginSubmit = e =>{
-        alert('Hello Mother fucker')
+    loginUser(loginData.email, loginData.password, location, history);
         e.preventDefault();
     }
 
@@ -46,6 +51,15 @@ const Login = () => {
             <Button sx={{width: '75%', m: 1}} type='submit' variant="contained">Login</Button>
             <NavLink style={{textDecoration: 'none'}} to="/register"><Button variant="text">Are You New here? Register</Button></NavLink> 
             </form>
+            {isLoading && <CircularProgress color="success" />}
+            {user?.email && <Alert severity="success">
+            <AlertTitle>Success</AlertTitle>
+            Your Account Successfully Added <strong>check it out!</strong>
+            </Alert>}
+            { authError && <Alert severity="error">
+            <AlertTitle>Error</AlertTitle>
+            This is an error <strong>Write Again!</strong>
+            </Alert>}
             </Grid>
             </Grid>
        </Container>

@@ -11,6 +11,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Navigation from './Pages/Shared/Navigation/Navigation';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
+import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -25,9 +26,9 @@ function App() {
           <Route path="/home">
               <Home></Home>
           </Route>
-          <Route path="/aboutUs">
+          <PrivateRoute path="/aboutUs">
               <AboutUs></AboutUs>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
               <Login></Login>
           </Route>

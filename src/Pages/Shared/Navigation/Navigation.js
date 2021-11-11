@@ -18,7 +18,7 @@ const Navigation = () => {
            
            {
                user?.email? 
-               <Button onClick={logOut}>Login</Button>
+               <Button style={{color: 'white', fontSize: '18px'}} onClick={logOut}>Log Out</Button>
                : 
                <Link to="/login"><Button style={{color: 'white', fontSize: '18px'}}>Login</Button></Link>
            }
