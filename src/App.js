@@ -9,30 +9,37 @@ import AboutUs from './Pages/AboutUs/AboutUs';
 import Login from './Pages/Login/Login/Login';
 import Footer from './Pages/Shared/Footer/Footer';
 import Navigation from './Pages/Shared/Navigation/Navigation';
+import Register from './Pages/Login/Register/Register';
+import AuthProvider from './context/AuthProvider/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-     <Router>
-       <Navigation></Navigation>
-       <Switch>
-         <Route exact path="/">
-            <Home></Home>
-         </Route>
-         <Route path="/home">
-            <Home></Home>
-         </Route>
-         <Route path="/aboutUs">
-            <AboutUs></AboutUs>
-         </Route>
-         <Route path="/login">
-            <Login></Login>
-         </Route>
-       </Switch>
-       <Router path="/footer">
-         <Footer></Footer>
-       </Router>
-     </Router>
+    <AuthProvider>
+      <Router>
+        <Navigation></Navigation>
+        <Switch>
+          <Route exact path="/">
+              <Home></Home>
+          </Route>
+          <Route path="/home">
+              <Home></Home>
+          </Route>
+          <Route path="/aboutUs">
+              <AboutUs></AboutUs>
+          </Route>
+          <Route path="/login">
+              <Login></Login>
+          </Route>
+          <Route path="/register">
+              <Register></Register>
+          </Route>
+        </Switch>
+        <Router path="/footer">
+          <Footer></Footer>
+        </Router>
+      </Router>
+    </AuthProvider>
     </div>
   );
 }
