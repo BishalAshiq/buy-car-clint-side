@@ -1,0 +1,18 @@
+.service-container{
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+
+.service-container img{
+    width: 100%;
+}
+.service-container button{
+    background-color: chocolate;
+    color: cornsilk;
+    font-size: 15px;
+    font-weight: bold;
+    border: cornsilk;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

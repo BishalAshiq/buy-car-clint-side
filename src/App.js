@@ -12,6 +12,10 @@ import Navigation from './Pages/Shared/Navigation/Navigation';
 import Register from './Pages/Login/Register/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
+import Booking from './Pages/Booking/Booking';
+import AddService from './Pages/AddService/AddService';
+import NotFound from './Pages/NotFound/NotFound';
+import ManageServices from './Pages/ManageServices/ManageServices';
 
 function App() {
   return (
@@ -34,6 +38,18 @@ function App() {
           </Route>
           <Route path="/register">
               <Register></Register>
+          </Route>
+          <Route path="/booking/:serviceId">
+              <Booking></Booking>
+          </Route>
+          <Route path="/addService">
+            <AddService></AddService>
+          </Route>
+          <Route path="/manageServices">
+            <ManageServices></ManageServices>
+          </Route>
+          <Route path="/*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Router path="/footer">
