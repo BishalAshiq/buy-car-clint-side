@@ -16,6 +16,7 @@ import Booking from './Pages/Booking/Booking';
 import AddService from './Pages/AddService/AddService';
 import NotFound from './Pages/NotFound/NotFound';
 import ManageServices from './Pages/ManageServices/ManageServices';
+import BookingModal from './Pages/BookingModal/BookingModal';
 
 function App() {
   return (
@@ -39,9 +40,12 @@ function App() {
           <Route path="/register">
               <Register></Register>
           </Route>
-          <Route path="/booking/:serviceId">
+          <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
-          </Route>
+          </PrivateRoute>
+          <PrivateRoute path="/bookingModal/:serviceId">
+              <BookingModal></BookingModal>
+          </PrivateRoute>
           <Route path="/addService">
             <AddService></AddService>
           </Route>
