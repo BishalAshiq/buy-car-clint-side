@@ -14,6 +14,7 @@ const Navigation = () => {
 
            <div>
            <Link to="/home">Home</Link>
+           <Link to="/dashboard">Dashboard</Link>
            <Link to="/aboutUs">About US</Link>
            
            {

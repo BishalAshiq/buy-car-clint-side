@@ -17,6 +17,7 @@ import AddService from './Pages/AddService/AddService';
 import NotFound from './Pages/NotFound/NotFound';
 import ManageServices from './Pages/ManageServices/ManageServices';
 import BookingModal from './Pages/BookingModal/BookingModal';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
           <Route path="/register">
               <Register></Register>
           </Route>
+          <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+          </PrivateRoute>
           <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
           </PrivateRoute>
