@@ -1,8 +1,11 @@
-.reviews{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-bottom: 60px;
+a{
+    
+    border-radius: 10px;
+    color: rgb(39, 27, 25);
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+
 }
 
 /* Make Responsive */
