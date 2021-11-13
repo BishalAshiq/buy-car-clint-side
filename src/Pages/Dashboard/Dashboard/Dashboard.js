@@ -15,6 +15,7 @@ import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddProduct from '../AddProduct/AddProduct';
 import useAuth from '../../../hooks/useAuth';
+import Payment from '../Payment/Payment';
 
 const drawerWidth = 200;
 
@@ -38,7 +39,7 @@ function Dashboard(props) {
         <Link to={`${url}/makeAdmin`}><Button color='inherit'>Make admin</Button></Link>
       <Link to={`${url}/addProduct`}><Button color='inherit'>Add Products</Button></Link>
         </Box>}
-      
+        <Link to={`${url}/payment`}><Button color='inherit'>Payment</Button></Link>
     </div>
   );
 
@@ -114,6 +115,9 @@ function Dashboard(props) {
         </Route>
         <Route path={`${path}/addProduct`}>
           <AddProduct></AddProduct>
+        </Route>
+        <Route path={`${path}/payment`}>
+          <Payment></Payment>
         </Route>
       </Switch>
       </Box>

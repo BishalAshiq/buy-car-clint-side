@@ -19,6 +19,7 @@ import ManageServices from './Pages/ManageServices/ManageServices';
 import BookingModal from './Pages/BookingModal/BookingModal';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 import ServicesMore from './Pages/Dashboard/ServicesMore/ServicesMore';
+import Payment from './Pages/Dashboard/Payment/Payment';
 
 function App() {
   return (
@@ -56,6 +57,9 @@ function App() {
           </Route>
           <Route path="/servicesMore">
             <ServicesMore></ServicesMore>
+          </Route>
+          <Route path="/payment">
+            <Payment></Payment>
           </Route>
           <Route path="/manageServices">
             <ManageServices></ManageServices>
