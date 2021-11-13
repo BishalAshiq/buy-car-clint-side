@@ -9,7 +9,7 @@ const Navigation = () => {
     return (
         <div className='nav'>
             <div>
-                <h2>BUY CARS</h2>
+                <h2>SelVik MoTors</h2>
             </div>
 
            <div>

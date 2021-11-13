@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# THIS IS THE WEBSITE OF BOOKING AND  BUYING CARS 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was Material UI with [SelVik MoTors](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+`In the project directory You can find:`
 
-### `npm start`
+### `Details Of Website`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Buying YOur Dream Cars, which you really need. We provide you all of the cars!
 
-### `npm test`
+### `Home-Page`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Home page Have 6 things of here, Those are quite fancy and User Experience Friendly!
 
-### `npm run build`
+Home Page have a Banner item, that is focus What the website really is! 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then have Some Services Thats the Demo Of the Website. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Then it has three Accordion Options! That if a customers visit this website, and think in his head some quick questions. and he can get those answers also! 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Then it have Reviews Items! Those Customers have gave here The Reviews who took their dream cars from here! 
 
-### `npm run eject`
+then it have a footer Items! Footer items have lots of policies where you get your from car with any kind of payament system!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `Dashboard`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Dashboard Have many Nested Routing Components. Those are taking You some places where you wanted to go ! Lets check it Out
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`Dashboard` have a option where can Making a admin Panel, Admin Can Control the website With his friendly experiences! 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `About Us`
 
-## Learn More
+**Note: this is a one-way to  `know` us by Our Website !**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`ABOUT US` is the thing that Users can understand the Website quickly!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## `Login/Out`
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+And Have Login and Log Out Option
