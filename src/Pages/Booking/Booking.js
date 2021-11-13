@@ -9,7 +9,7 @@ const Booking = () => {
     const handleBookingOpen = () => setOpenBooking(true);
     const handleBookingClose = () => setOpenBooking(false);
     useEffect( ()=>{
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://fathomless-chamber-42458.herokuapp.com/services/${serviceId}`)
         .then(res=>res.json())
         .then(data=> setService(data))
     },[]);
