@@ -15,15 +15,25 @@ import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { Grid } from '@mui/material';
-import ManageServices from '../../ManageServices/ManageServices';
-import AddService from '../../AddService/AddService';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  useRouteMatch } from "react-router-dom";
+import { Button } from '@mui/material';
+import DashboardHome from '../DashboardHome/DashboardHome';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import AddProduct from '../AddProduct/AddProduct';
 
 const drawerWidth = 200;
 
 function Dashboard(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+ 
+  let { path, url } = useRouteMatch();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -33,16 +43,10 @@ function Dashboard(props) {
     <div>
       <Toolbar />
       <Divider />
-      <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+      <Link to="/"><Button color='inherit'>Home</Button></Link><br/>
+      <Link to={`${url}`}><Button color='inherit'>Dashboard</Button></Link>
+      <Link to={`${url}/makeAdmin`}><Button color='inherit'>Make admin</Button></Link>
+      <Link to={`${url}/addProduct`}><Button color='inherit'>Add Products</Button></Link>
       
     </div>
   );
@@ -110,16 +114,17 @@ function Dashboard(props) {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        <Typography paragraph>
-        <Grid container spacing={2}>
-            <Grid item xs={12} md={6}>
-            <AddService></AddService>
-            </Grid>
-            <Grid item xs={12} md={6}>
-            <ManageServices></ManageServices>
-            </Grid>
-            </Grid>
-        </Typography>
+        <Switch>
+        <Route exact path={path}>
+          <DashboardHome></DashboardHome>
+        </Route>
+        <Route path={`${path}/makeAdmin`}>
+          <MakeAdmin></MakeAdmin>
+        </Route>
+        <Route path={`${path}/addProduct`}>
+          <AddProduct></AddProduct>
+        </Route>
+      </Switch>
       </Box>
     </Box>
   );
