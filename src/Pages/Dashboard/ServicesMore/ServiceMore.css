@@ -1,0 +1,29 @@
+.More-service{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap :15px;
+    align-items: center;
+}
+
+.single-products{
+  border: 2px solid rebeccapurple;
+  width: 305px;
+  height: 430px;
+  background-color: rgb(248, 133, 38);
+  color: white;
+  border-radius: 10px;
+  
+  
+}
+
+.single-products img{
+    width: 300px;
+    border-radius: 5px;
+}
+.single-products button{
+    background-color: saddlebrown;
+    color: seashell;
+    padding: 5px 20px;
+    border: 2px white;
+    border-radius: 3px;
+}

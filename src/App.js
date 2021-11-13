@@ -18,6 +18,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import ManageServices from './Pages/ManageServices/ManageServices';
 import BookingModal from './Pages/BookingModal/BookingModal';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+import ServicesMore from './Pages/Dashboard/ServicesMore/ServicesMore';
 
 function App() {
   return (
@@ -53,11 +54,14 @@ function App() {
           <Route path="/addService">
             <AddService></AddService>
           </Route>
+          <Route path="/servicesMore">
+            <ServicesMore></ServicesMore>
+          </Route>
           <Route path="/manageServices">
             <ManageServices></ManageServices>
           </Route>
           <Route path="/*">
-            <NotFound></NotFound>
+            <NotFound></NotFound> 
           </Route>
         </Switch>
         <Router path="/footer">
