@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './ManageServices.css'
 
 const ManageServices = () => {
     const [services, setServices] =useState([])
@@ -24,7 +25,8 @@ const ManageServices = () => {
     return (
         <div>
             <h2>This is Manage Service</h2>
-            {
+          <div className='manage-service'>
+          {
                 services.map(service =>
                 <div key={service._id}>
                     <img src={service.img} alt=""/>
@@ -32,6 +34,7 @@ const ManageServices = () => {
                     <button onClick={()=>handleDelete(service._id)}>Delete</button>
                 </div>)
             }
+          </div>
         </div>
     );
 };

@@ -14,27 +14,30 @@ import { Button } from '@mui/material';
 import DashboardHome from '../DashboardHome/DashboardHome';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddProduct from '../AddProduct/AddProduct';
+import useAuth from '../../../hooks/useAuth';
 
 const drawerWidth = 200;
 
 function Dashboard(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
- 
   let { path, url } = useRouteMatch();
+  const {admin} = useAuth();
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  const drawer = (
+  const drawer = ( 
     <div>
       <Toolbar />
       <Divider />
       <Link to="/"><Button color='inherit'>Home</Button></Link><br/>
       <Link to={`${url}`}><Button color='inherit'>Dashboard</Button></Link>
-      <Link to={`${url}/makeAdmin`}><Button color='inherit'>Make admin</Button></Link>
+      {admin && <Box>
+        <Link to={`${url}/makeAdmin`}><Button color='inherit'>Make admin</Button></Link>
       <Link to={`${url}/addProduct`}><Button color='inherit'>Add Products</Button></Link>
+        </Box>}
       
     </div>
   );

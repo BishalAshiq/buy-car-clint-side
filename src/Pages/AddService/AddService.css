@@ -3,9 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(246, 191, 88);
+    border-radius: 20px;
+    padding: 20px;
 }
 .service-add form input, textarea{
     width: 50%;
     height: 40px;
     margin-bottom: 15px;
+}
+.submit{
+    background-color: tomato;
+    color: white;
+    font-size: 18px;
+    border: white;
+    border-radius: 5px;
+}
+.submit:hover{
+    background-color: brown;
+    color: cornsilk;
 }

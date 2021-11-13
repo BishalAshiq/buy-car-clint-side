@@ -1,0 +1,19 @@
+.manage-service{
+    background-color: rgb(255, 241, 223);
+    border-radius: 20px;
+    border-left: 2px solid gray;
+}
+.manage-service img{
+    width: 420px;
+    margin-top: 40px;
+    box-shadow: 20px 15px 5px;
+}
+.manage-service button{
+    background-color: lightcoral;
+    padding: 5px 25px;
+    border: 2px wheat;
+    border-radius: 5px;
+    color: lightgoldenrodyellow;
+    font-size: 17px;
+    cursor: pointer;
+}
