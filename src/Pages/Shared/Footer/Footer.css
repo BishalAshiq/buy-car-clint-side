@@ -8,6 +8,6 @@
 .list{
     display: flex;
     justify-content: space-evenly;
-    margin-right: 80px;
+    margin-right: 60px;
     color: blanchedalmond;
 }
