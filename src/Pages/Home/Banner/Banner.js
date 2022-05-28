@@ -12,7 +12,7 @@ const bannerBg = {
 };
 const typo = {
   color: "rgb(182, 168, 145)",
-  marginTop: "60px",
+  marginTop: "90px",
   fontSize: "30px",
   fontWeight: "bold",
 };
@@ -28,9 +28,9 @@ const aboutButton = {
 
 const Banner = () => {
   return (
-    <div>
-      <Box style={bannerBg} sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+    <div style={{}}>
+      <Box style={bannerBg} sx={{ flexGrow: 1, paddingBottom: 20 }}>
+      <Grid container spacing={2} style={{paddingTop: 100}}>
         <Grid item xs={12} md={6}>
           <Typography style={typo}>
             This is the Place Where You get your <br />{" "}

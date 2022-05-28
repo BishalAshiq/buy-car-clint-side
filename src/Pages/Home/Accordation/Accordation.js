@@ -52,7 +52,7 @@ export default function CustomizedAccordions() {
 
   return (
     <div className='Accordation'>
-      <h2>WHAT IS ON YOUR MIND</h2>
+      <h2 style={{fontSize: 30}}>WHAT IS ON YOUR MIND</h2>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography>What is the Mileage On the Odometer?</Typography>
