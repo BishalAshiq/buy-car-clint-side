@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    margin-bottom: 60px;
+}
+.reviews image{
+    width: 50px;
 }
 
 /* Make Responsive */

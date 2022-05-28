@@ -4,7 +4,9 @@
 }
 
 .service-container img{
-    width: 100%;
+    width: 370px;
+    height: 250px;
+    border-radius: 20px;
 }
 .service-container button{
     background-color: chocolate;

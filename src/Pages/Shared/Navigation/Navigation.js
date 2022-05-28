@@ -8,11 +8,11 @@ const Navigation = () => {
     const{user, logOut} = useAuth();
     return (
         <div className='nav'>
-            <div>
+            <div data-aos="fade-right">
                 <h2>SelVik MoTors</h2>
             </div>
 
-           <div>
+           <div data-aos="fade-left">
            <Link to="/home">Home</Link>
            <Link to="/dashboard">Dashboard</Link>
            <Link to="/aboutUs">About US</Link>

@@ -3,6 +3,7 @@ import Reviews from '../Reviews/Reviews';
 import Accordation from '../Accordation/Accordation';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
+import './Home.css';
 
 const Home = () => {
     return (
