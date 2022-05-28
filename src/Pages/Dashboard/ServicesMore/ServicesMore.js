@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 const ServicesMore = () => {
     return (
-        <div className='More-service'>
+        <div className='More-service' data-aos="zoom-out-down">
             <div className='single-products'>
                 <img src={image1} alt=""/>
                 <h3>Audi H500ja</h3>

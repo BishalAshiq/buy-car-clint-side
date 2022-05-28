@@ -1,13 +1,17 @@
-.footer{
- background-color: black;
+.footer {
+  background-color: black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
 }
-.BA{
-    color: blanchedalmond;
-    display: flex;
+.BA {
+  color: blanchedalmond;
+  display: flex;
 }
-.list{
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 60px;
-    color: blanchedalmond;
+.list {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 60px;
+  color: blanchedalmond;
 }

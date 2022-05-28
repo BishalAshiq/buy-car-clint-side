@@ -28,10 +28,10 @@ const aboutButton = {
 
 const Banner = () => {
   return (
-    <div style={{}}>
+    <div>
       <Box style={bannerBg} sx={{ flexGrow: 1, paddingBottom: 20 }}>
       <Grid container spacing={2} style={{paddingTop: 100}}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={6} md={6} data-aos="fade-down-right">
           <Typography style={typo}>
             This is the Place Where You get your <br />{" "}
             <span className="dream">Dream</span> Car
@@ -40,7 +40,7 @@ const Banner = () => {
             <button style={aboutButton}>MORE TO KNOW</button>
           </Link>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-down-left">
           <img className="img" src={banner} alt="" />
         </Grid>
       </Grid>

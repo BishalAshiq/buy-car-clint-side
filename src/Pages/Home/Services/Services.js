@@ -13,7 +13,7 @@ const Services = () => {
   }, []);
   return (
     <div id="services" data-aos="fade-up" data-aos-duration="3000">
-      <h1>Our Services</h1>
+      <h1 style={{fontSize: 35}}>Our Services</h1>
       <Container>
         <div className="services-container">
           {services.map((service) => (

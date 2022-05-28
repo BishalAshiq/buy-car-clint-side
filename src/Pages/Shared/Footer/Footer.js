@@ -3,7 +3,8 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer' data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
           <div className='BA'>
               <h1>B A</h1><p>Consumer Reports</p>
           </div>

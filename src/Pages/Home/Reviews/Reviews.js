@@ -17,8 +17,8 @@ import { Container } from "@mui/material";
 export default function MediaCard() {
   const [value, setValue] = React.useState(2);
   return (
-    <div style={{marginBottom: 100}}>
-      <h1 style={{marginTop: 100}}>CUSTOMERS REVIEW</h1>
+    <div style={{ marginBottom: 100 }} data-aos="zoom-out-up">
+      <h1 style={{ marginTop: 100 }}>CUSTOMERS REVIEW</h1>
       <Container>
         <div className="reviews">
           <Card sx={{ maxWidth: 345, maxHeight: 290 }}>
@@ -27,7 +27,12 @@ export default function MediaCard() {
               height="250"
               image={image1}
               alt="green iguana"
-              style={{width: 100, height: 80, margin: "0 auto", paddingTop: 10}}
+              style={{
+                width: 100,
+                height: 80,
+                margin: "0 auto",
+                paddingTop: 10,
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -56,7 +61,12 @@ export default function MediaCard() {
               height="250"
               image={image2}
               alt="green iguana"
-              style={{width: 100, height: 80, margin: "0 auto", paddingTop: 10}}
+              style={{
+                width: 100,
+                height: 80,
+                margin: "0 auto",
+                paddingTop: 10,
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -85,7 +95,12 @@ export default function MediaCard() {
               height="250"
               image={image3}
               alt="green iguana"
-              style={{width: 100, height: 80, margin: "0 auto", paddingTop: 10}}
+              style={{
+                width: 100,
+                height: 80,
+                margin: "0 auto",
+                paddingTop: 10,
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -114,7 +129,12 @@ export default function MediaCard() {
               height="250"
               image={image4}
               alt="green iguana"
-              style={{width: 100, height: 80, margin: "0 auto", paddingTop: 10}}
+              style={{
+                width: 100,
+                height: 80,
+                margin: "0 auto",
+                paddingTop: 10,
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -143,7 +163,12 @@ export default function MediaCard() {
               height="250"
               image={image5}
               alt="green iguana"
-              style={{width: 100, height: 80, margin: "0 auto", paddingTop: 10}}
+              style={{
+                width: 100,
+                height: 80,
+                margin: "0 auto",
+                paddingTop: 10,
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -172,7 +197,12 @@ export default function MediaCard() {
               height="250"
               image={image6}
               alt="green iguana"
-              style={{width: 100, height: 80, margin: "0 auto", paddingTop: 10}}
+              style={{
+                width: 100,
+                height: 80,
+                margin: "0 auto",
+                paddingTop: 10,
+              }}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
